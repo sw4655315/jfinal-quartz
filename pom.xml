@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>cn.dreampie</groupId>
-  <artifactId>jfinal-quartz</artifactId>
+  <groupId>com.ms.library</groupId>
+  <artifactId>ms-jfinal-quartz</artifactId>
   <version>0.2</version>
   <packaging>jar</packaging>
   <name>jfinal-quartz</name>
   <description>jfinal quartz plugins</description>
-  <url>https://github.com/Dreampie/${project.name}</url>
+  <url>https://github.com/sw4655315/${project.name}</url>
 
   <licenses>
     <license>
