@@ -1,10 +1,11 @@
 package cn.dreampie.quartz;
 
-import cn.dreampie.quartz.job.QuartzJob;
-import com.google.common.collect.Lists;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.quartz.SchedulerFactory;
 
-import java.util.List;
+import cn.dreampie.quartz.job.QuartzJob;
 
 /**
  * Created by wangrenhui on 14-4-21.
@@ -13,7 +14,7 @@ public class QuartzKit {
 
   private static SchedulerFactory schedulerFactory;
 
-  private static List<QuartzJob> quartzJobs = Lists.newArrayList();
+  private static List<QuartzJob> quartzJobs = new ArrayList<QuartzJob>();
 
   private QuartzKit() {
   }

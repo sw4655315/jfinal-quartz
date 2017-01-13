@@ -2,10 +2,11 @@ package cn.dreampie.quartz.job;
 
 import cn.dreampie.quartz.QuartzKey;
 import cn.dreampie.quartz.QuartzKit;
-import com.google.common.collect.Maps;
+
 import org.quartz.*;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -16,7 +17,7 @@ public abstract class QuartzJob {
   protected JobState state;//started,stoped,paused
   protected Class<? extends Job> jobClass;
   protected Date scheduleTime;
-  protected Map<String, Object> params = Maps.newHashMap();
+  protected Map<String, Object> params = new HashMap<String,Object>();
 
   protected static final String TRIGGER_MARK = "trigger";
   protected static final String GROUP_MARK = "group";

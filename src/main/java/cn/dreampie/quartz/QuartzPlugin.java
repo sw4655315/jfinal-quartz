@@ -1,16 +1,16 @@
 package cn.dreampie.quartz;
 
-import cn.dreampie.PropertiesKit;
-import cn.dreampie.quartz.job.QuartzCronJob;
-import cn.dreampie.quartz.job.QuartzJob;
-import com.jfinal.plugin.IPlugin;
+import java.util.Enumeration;
+import java.util.Properties;
+
 import org.quartz.Scheduler;
 import org.quartz.impl.StdSchedulerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import cn.dreampie.quartz.job.QuartzCronJob;
+import cn.dreampie.quartz.job.QuartzJob;
 
-import java.util.Enumeration;
-import java.util.Properties;
+import com.jfinal.plugin.IPlugin;
 
 /**
  * Created by wangrenhui on 14-4-21.

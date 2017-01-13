@@ -46,9 +46,6 @@
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
     <jfinal.version>1.8</jfinal.version>
     <quartz.version>2.2.1</quartz.version>
-    <jfinal-slf4j.version>0.1</jfinal-slf4j.version>
-    <jfinal-utils.version>0.1</jfinal-utils.version>
-    <druid.version>1.0.9</druid.version>
   </properties>
 
   <dependencies>
@@ -56,12 +53,14 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
+      <scope>test</scope>
     </dependency>
     <!--jfinal-->
     <dependency>
       <groupId>com.jfinal</groupId>
       <artifactId>jfinal</artifactId>
       <version>${jfinal.version}</version>
+      <scope>provided</scope>
     </dependency>
 
     <!--任务调度-->
@@ -70,24 +69,25 @@
       <artifactId>quartz</artifactId>
       <version>${quartz.version}</version>
     </dependency>
-
+    <!-- 
     <dependency>
       <groupId>cn.dreampie</groupId>
       <artifactId>jfinal-utils</artifactId>
       <version>${jfinal-utils.version}</version>
     </dependency>
-
+    
     <dependency>
       <groupId>cn.dreampie</groupId>
       <artifactId>jfinal-slf4j</artifactId>
       <version>${jfinal-slf4j.version}</version>
     </dependency>
-
+    
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>druid</artifactId>
       <version>${druid.version}</version>
     </dependency>
+     -->
   </dependencies>
 
   <distributionManagement>
@@ -137,7 +137,7 @@
           </execution>
         </executions>
       </plugin>
-      <!--gpg-->
+      <!--gpg
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
@@ -152,6 +152,7 @@
           </execution>
         </executions>
       </plugin>
+      -->
     </plugins>
   </build>
 </project>
